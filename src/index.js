@@ -8,13 +8,15 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import App from './components/App';
-import Header from './components/Header';
+import PRList from './components/PrListing';
+import AddPR from './components/AddPR';
 
 ReactDOM.render(
  <Provider store={configureStore()}>
   <Router>
       <Route path='/' component={App} />
-      <Route path='/add-pr' component={Header} />
+      <Route path='/view-pr' component={PRList} />
+      <Route path='/add-pr' component={AddPR} />
   </Router>
  </Provider>,
  document.getElementById('root'),
