@@ -1,10 +1,9 @@
 import React from 'react';
 
-const Header = () => {
-
+const AddPR = () => {
   return (
     <div className="align-center">This page is under Maintenance!</div>
   );
 };
 
-export default Header;
+export default AddPR;
