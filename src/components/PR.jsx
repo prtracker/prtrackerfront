@@ -57,6 +57,8 @@ const PR = (props) => {
         columns={columns}
         sortable
         striped
+        showPagination
+        defaultPageSize = {10}
       />
     </div>
   );
