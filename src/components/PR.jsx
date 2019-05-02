@@ -13,6 +13,7 @@ const columns = [
     {
       Header: () => renderSortedHeader('PR Link'),
       accessor: 'prLink',
+      Cell: row => (<a href={row.value} target="_blank">{row.value}</a>),
       fixed: 'left',
     },
     {
