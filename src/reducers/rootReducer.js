@@ -1,6 +1,12 @@
 import { combineReducers } from 'redux';
-import simpleReducer from './viewReducer';
+import prReducer from './prListReducer';
 
-export default combineReducers({
- simpleReducer
+const appReducer = combineReducers({
+    prs:prReducer,
 });
+
+const rootReducer = (state, action) => {
+   return appReducer(state, action);
+};
+
+export default rootReducer;
